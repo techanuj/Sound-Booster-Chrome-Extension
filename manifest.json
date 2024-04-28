@@ -1,0 +1,35 @@
+{
+    "manifest_version": 2,
+    "name": "Badhao Aawaz",
+    "version": "1.0",
+    "description": "Boost the sound on webpages.",
+    "permissions": [
+      "activeTab",
+      "storage"
+    ],
+    "content_scripts": [
+      {
+        "matches": ["*://*/*"],
+        "js": ["content.js"],
+        "run_at": "document_idle"
+      }
+    ],
+    "browser_action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "low.png",
+        "48": "mid.png",
+        "128": "Full.png"
+      }
+    },
+    "icons": {
+      "16": "low.png",
+      "48": "mid.png",
+      "128": "Full.png"
+    },
+    "permissions": [
+      "activeTab",
+      "storage"
+    ]
+  }
+  
